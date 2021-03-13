@@ -31,7 +31,7 @@
                   <a href="javascript:void(0);" class="waves-effect"><i class="dripicons-location"></i><span> Users </span> <span class="badge badge-danger badge-pill float-right">2</span></a>
                   <ul class="list-unstyled">
                       <li><a href="{{ url('administrator/roles') }}"> Roles </a></li>
-                      <li><a href="maps-vector.html"> Permissions</a></li>
+                      <li><a href="{{ url('administrator/permission') }}"> Permissions</a></li>
                   </ul>
               </li>
               

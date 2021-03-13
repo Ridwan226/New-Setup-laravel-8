@@ -110,6 +110,12 @@
                                                 <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In</button>
                                             </div>
                                         </div>
+                                        
+                                        <div class="form-group text-center row m-t-20">
+                                          <div class="col-12">
+                                              <a href="{{ url('auth/google') }}" class="btn btn-primary btn-block waves-effect waves-light" type="submit"> <i class="fab fa-google"></i> Mengunakan Google</a>
+                                          </div>
+                                        </div>
         
                                         <div class="form-group m-t-10 mb-0 row">
                                           @if (Route::has('password.request'))

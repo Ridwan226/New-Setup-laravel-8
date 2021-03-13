@@ -17,7 +17,7 @@
                                       <i class="mdi mdi-close-circle"></i>
                                   </a>
                               </div>
-                          </div>
+                          </div> 
 
                           <ul class="list-inline float-right mb-0">
                               <li class="list-inline-item dropdown notification-list">
@@ -93,7 +93,12 @@
                                       <a class="dropdown-item" href="#"><span class="badge badge-success float-right m-t-5">5</span><i class="dripicons-gear text-muted"></i> Settings</a>
                                       <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted"></i> Lock screen</a>
                                       <div class="dropdown-divider"></div>
-                                      <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted"></i> Logout</a>
+                                      
+                                      <a class="dropdown-item" href="{{ route('logout') }}"  onclick="event.preventDefault();
+                                      document.getElementById('logout-form').submit();"><i class="dripicons-exit text-muted"></i>   {{ __('Logout') }}</a>
+                                      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                      </form>
                                   </div>
                               </li>
 
